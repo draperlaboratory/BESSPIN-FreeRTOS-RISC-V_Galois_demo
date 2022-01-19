@@ -96,7 +96,7 @@ ENTRY(boot)
 SECTIONS {
    .uncached : {
       . = ALIGN(64);
-      __uncached_start = .;
+      PROVIDE(__uncached_start = .);
       *(.uncached);
 		*(.uncached.*);
       __uncached_end = .;
