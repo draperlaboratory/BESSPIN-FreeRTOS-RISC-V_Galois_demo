@@ -96,8 +96,11 @@ ENTRY(boot)
 SECTIONS {
    .uncached : {
       . = ALIGN(64);
+      __uncached_start = .;
       *(.uncached);
 		*(.uncached.*);
+      __uncached_end = .;
+      . += (0x00800000 - (__uncached_end - __uncached_start));
    } > cmem
 	.text : {
       . = ALIGN(8);
