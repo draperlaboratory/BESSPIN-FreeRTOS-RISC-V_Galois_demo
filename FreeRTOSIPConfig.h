@@ -337,7 +337,7 @@ disconnecting stage will timeout after a period of non-activity. */
     #define configMAC_ADDR2		0x35
     #define configMAC_ADDR3		0x04
     #define configMAC_ADDR4		0xDB
-    #define configMAC_ADDR5		0x77
+    #define configMAC_ADDR5		0x9C
 
     /* Default IP address configuration.  Used in ipconfigUSE_DNS is set to 0, or
     ipconfigUSE_DNS is set to 1 but a DNS server cannot be contacted. */
