@@ -4,3 +4,4 @@ doc/*
 *.asm
 *.d
 Qemu-sifive_e-FreedomStudio/build/main_besspin.map
+isp-run-*/
